@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aman/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,14 +103,14 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/aman/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('~/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/aman/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/aman/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "~/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/aman/opt/miniconda3/bin:$PATH"
+        export PATH="~/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -126,7 +126,7 @@ alias mk='make'
 
 
 # opam configuration
-[[ ! -r /Users/aman/.opam/opam-init/init.zsh ]] || source /Users/aman/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 #man page colorization
 man() {
